@@ -1,0 +1,1251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+  .Parent-loading {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #0d0d0e;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: load 4s linear forwards;
+  }
+
+  @keyframes load {
+    form {
+      display: block;
+    }
+
+    to {
+      display: none;
+    }
+  }
+
+  .loding-animation-holder {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: relative;
+  }
+
+  .loading-animator {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-radius: 50%;
+    background: #c4b422e3;
+    transform: rotate(0deg);
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  .loading-animator:nth-child(1) {
+    transform-origin: bottom right;
+    animation: loading 3s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  .loading-animator:nth-child(2) {
+    transform-origin: bottom left;
+    animation: loading 3s 0.3s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  .loading-animator:nth-child(4) {
+    transform-origin: top left;
+    animation: loading 3s 0.4s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  .loading-animator:nth-child(3) {
+    transform-origin: top right;
+    animation: loading 3s 0.5s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+
+    25% {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+
+    35% {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+
+    65% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  .middle-circle {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 47.5px;
+    left: 47.5px;
+    border-radius: 100%;
+    /* border: 1px solid #000; */
+    background: #FFEB3B;
+  }
+
+  .content {
+    padding: 20px;
+    z-index: 1000;
+    position: fixed;
+  }
+
+  .content h1 {
+    color: #fff;
+  }
+
+  .content p {
+    color: #666;
+  }
+
+  .block{
+    height: 720px;
+    width: 20%;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 0px;
+    left: 80%;
+    background-color: white;
+    display: none;
+    z-index: 1;
+  }
+
+  .block li{
+    list-style: none;
+    margin-top: 30px;
+    font-family: 'Source Serif';
+    margin-left: 10%;
+  }
+  .aa{
+    display: block;
+  }
+  
+
+  .bb{
+    margin-left: -20%;
+  }
+
+
+
+
+
+
+
+.background{
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    height: 80px;
+}
+
+.background nav a{
+    line-height: 70px;
+    color: white;
+}
+.backgroung img{
+    height: 70px;
+}
+.background .nav1 i{
+    line-height: 70px;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+.logo{
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid black; */
+}
+
+.logo img{
+    height: 100%;
+    width: 100px;
+    margin-left: 25%;
+}
+
+nav{
+    height: 100%;
+    width: 55%;
+    /* border: 1px solid black; */
+    font-family: 'Source Serif';
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    line-height: 100px;
+    margin-left: 15px;
+}
+
+nav a:hover{
+    border-bottom: 3px solid #f2dc60;
+    padding-bottom: 10px;
+}
+
+.nav1{
+    height: 100%;
+    width: 25%;
+    /* border: 1px solid black; */
+}
+
+.nav1 i{
+    line-height: 100px;
+    font-size: 20px;
+    margin-left: 25px;
+    transition-duration: 1s;
+}
+
+.nav1 i:hover{
+    opacity: 0.5;
+}
+
+.main1{
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2020/03/agricultural-home-banner-bg.jpg?id=493);
+    background-size: cover;
+    position: relative;
+    top: 100px;
+}
+
+.main1 h1{
+    font-family: 'Open sans';
+    color: white;
+    font-size: 55px;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 550px;
+}
+
+.main1 button{
+    height: 45px;
+    width: 150px;
+    background-color: white;
+    margin-left: 5%;
+    border: 0px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.main1 button:hover{
+    background-color: #485b24;
+    color: white;
+}
+
+.s1{
+    height: 400px;
+    width: 600px;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 100px;
+    left: 55%;
+    background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2020/03/agricultural-home-banner-bg.jpg?id=493);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.s1:hover{
+    background-image: linear-gradient(rgba(72,91,36,0),rgba(72,91,36,0.7)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2020/03/agricultural-home-banner-bg.jpg?id=493);
+}
+
+.main2{
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+}
+
+.main2 a{
+    font-family: 'Source Serif';
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+
+.s2{
+    height: 150px;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.s3{
+  height: 100%;
+  width: 15%;
+  /* border: 1px solid black; */
+  transition-duration: 1s;
+}
+
+.s3 img{
+  margin-top: 18%;
+  transition-duration: 1s;
+}
+
+.s3 p{
+  font-family: 'Source Serif';
+  font-size: 18px;
+  margin-top: 5%;
+  transition-duration: 1s;
+}
+
+.s3:hover{
+  border: 1px solid gray;
+}
+
+.s3:hover p{
+  color: #f2dc60;
+}
+
+.s3:hover img{
+  transform: rotateY(360deg);
+}
+
+.main3{
+  height: 415px;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.s4{
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid black; */
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/1.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.s4:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/1.jpg);
+
+}
+
+.s4 p{
+  font-family: 'Source Serif';
+  position: relative;
+  top: 200px;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(360deg);
+  animation: animation1 3s linear infinite;
+  left: 0%;
+  display: none;
+}
+
+.s4:hover p{
+  display: block;
+}
+
+@keyframes animation1{
+  50%{
+    color: #ebc700;
+    top: 150px;
+  }
+}
+
+.s5{
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid black; */
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/2.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.s5:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/2.jpg);
+
+}
+
+.s5 p{
+  font-family: 'Source Serif';
+  position: relative;
+  top: 200px;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(360deg);
+  animation: animation1 3s linear infinite;
+  left: 0%;
+  display: none;
+}
+
+.s5:hover p{
+  display: block;
+}
+
+.s6{
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid black; */
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/3.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.s6:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/3.jpg);
+
+}
+
+.s6 p{
+  font-family: 'Source Serif';
+  position: relative;
+  top: 200px;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(360deg);
+  animation: animation1 3s linear infinite;
+  left: 0%;
+  display: none;
+}
+
+.s6:hover p{
+  display: block;
+}
+
+.s7{
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid black; */
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/7.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.s7:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/7.jpg);
+
+}
+
+.s7 p{
+  font-family: 'Source Serif';
+  position: relative;
+  top: 200px;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(360deg);
+  animation: animation1 3s linear infinite;
+  left: 0%;
+  display: none;
+}
+
+.s7:hover p{
+  display: block;
+}
+
+.s8{
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid black; */
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/12.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.s8:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/12.jpg);
+
+}
+
+.s8 p{
+  font-family: 'Source Serif';
+  position: relative;
+  top: 200px;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(360deg);
+  animation: animation1 3s linear infinite;
+  left: 0%;
+  display: none;
+}
+
+.s8:hover p{
+  display: block;
+}
+
+.main4{
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+
+.main4 a{
+  font-family: 'Source Serif';
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+.main5{
+  height: 350px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s9{
+  height: 100%;
+  width: 23%;
+  /* border: 1px solid black; */
+  background-color: #485b24;
+}
+
+.s9 img{
+  height: 70%;
+  width: 100%;
+  margin-top: -10px;
+  margin-left: 10px;
+  transition-duration: 1s;
+}
+
+
+.s9:hover img{
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.s10{
+  height: 30%;
+  width: 100%;
+  /* border: 1px solid black; */
+  background-color: white;
+  margin-left: 10px;
+  margin-top: -5px;
+  transition-duration: 1s;
+}
+
+.s9:hover .s10{
+  margin-left: 0px;
+}
+
+.s10 p{
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 13px;
+  color: #6e6e6e;
+}
+
+.s10 h4{
+  font-weight: lighter;
+  margin-top: 1%;
+}
+
+.s10 h3{
+  font-weight: lighter;
+  margin-top: 5%;
+  color: #6e6e6e;
+}
+
+.s11{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #ebc700;
+  position: relative;
+  top: -68%;
+  left: 42%;
+  display: none;
+  transition-duration: 1s;
+}
+
+.s12{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #ebc700;
+  position: relative;
+  top: -78%;
+  left: 57%;
+  display: none;
+  transition-duration: 1s;
+}
+
+.s11 i{
+  margin-left: 9px;
+  margin-top: 10px;
+  color: white;
+}
+
+
+.s12 i{
+  margin-left: 9px;
+  margin-top: 10px;
+  color: white;
+}
+
+.s9:hover .s11{
+  display: block;
+  position: relative;
+  left: 35%;
+}
+
+.s9:hover .s12{
+  display: block;
+  position: relative;
+  left: 50%;
+}
+
+.main4 button{
+  height: 30px;
+  width: 145px;
+  background-color: #ebc700;
+  border: 0px;
+  color: white;
+  font-family: 'Source Serif';
+  transition-duration: 1s;
+}
+
+.main4 button:hover{
+  background-color: #485b24;
+}
+
+.main6{
+  height: 1700px;
+  width: 100%;
+  /* border: 1px solid black; */
+  background-color: #e4e4e4;
+}
+
+.main6 img{
+  height: 300px;
+  width: 500px;
+  /* border: 1px solid black; */
+}
+
+.s13{
+  height: 450px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s14{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.s14 img{
+  height: 400px;
+  width: 600px;
+  position: relative;
+  top: -15px;
+  left: 0%;
+  transform: rotateY(360deg);
+  animation: animation2 3s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes animation2{
+  50%{
+    top: -30px;
+    opacity: 1;
+  }
+}
+
+.s14 h1{
+  font-family: 'Open Sans';
+  font-size: 45px;
+  color: #485b24;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.s14 p{
+  margin-left: 5%;
+  width: 570px;
+  margin-top: 5%;
+  font-family: 'Open Sans';
+  line-height: 25px;
+}
+
+.s14 button{
+  height: 50px;
+  width: 150px;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 0px;
+  background-color: #485b24;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+.s14 button:hover{
+  background-color: #ebc700;
+}
+
+
+
+
+
+
+
+
+.s15{
+  height: 450px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s16{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.s16 img{
+  height: 350px;
+  width: 500px;
+  position: relative;
+  top: 50px;
+  left: 10%;
+  transform: rotateY(360deg);
+  animation: animation3 3s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes animation3{
+  50%{
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.s16 h1{
+  font-family: 'Open Sans';
+  font-size: 45px;
+  color: #485b24;
+  margin-top: 10%;
+  margin-left: 5%;
+  text-align: right;
+}
+
+.s16 p{
+  margin-left: 5%;
+  width: 570px;
+  margin-top: 5%;
+  font-family: 'Open Sans';
+  line-height: 25px;
+  text-align: right;
+}
+
+.s16 button{
+  height: 50px;
+  width: 150px;
+  margin-left: 75%;
+  margin-top: 5%;
+  border: 0px;
+  background-color: #485b24;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+.s16 button:hover{
+  background-color: #ebc700;
+}
+
+
+.s17{
+  height: 450px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s18{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.s18 img{
+  height: 400px;
+  width: 600px;
+  position: relative;
+  top: 15px;
+  left: 0%;
+  transform: rotateY(360deg);
+  animation: animation2 3s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes animation2{
+  50%{
+    top: -30px;
+    opacity: 1;
+  }
+}
+
+.s18 h1{
+  font-family: 'Open Sans';
+  font-size: 45px;
+  color: #485b24;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.s18 p{
+  margin-left: 5%;
+  width: 570px;
+  margin-top: 5%;
+  font-family: 'Open Sans';
+  line-height: 25px;
+}
+
+.s18 button{
+  height: 50px;
+  width: 150px;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 0px;
+  background-color: #485b24;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+.s18 button:hover{
+  background-color: #ebc700;
+}
+
+.main7{
+  height: 1050px;
+  width: 100%;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/about-img-02.jpg?id=98);
+  background-size: cover;
+}
+
+.main7 a{
+  font-family: 'Source Serif';
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+.main7 h3{
+  color: white;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.s19{
+  height: 250px;
+  width: 80%;
+  /* border: 1px solid white; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s20{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+}
+
+.s20 .count{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ebc700;
+  font-weight: bold;
+  font-size: 120px;
+  font-family: 'Source Serif';
+  float: left;
+  margin: 30px;
+  text-shadow: 1px 1px black;
+  position: relative;
+  top: 20%;
+  left: 40%;
+  animation: animation5 3s infinite linear;
+
+}
+
+
+@keyframes animation5{
+  50%{
+
+    color: #485b24;
+  }
+}
+
+.s20 h1{
+  font-family: 'Open Sans';
+  color: white;
+  /* transform: rotateY(360deg); */
+  position: relative;
+  top: 25%;
+  animation: animation4 3s infinite linear;
+}
+
+.s20 p{
+  font-family: 'Open Sans';
+  color: white;
+  width: 530px;
+  line-height: 25px;
+  /* transform: rotateY(360deg); */
+  position: relative;
+  top: 30%;
+  animation: animation4 3s infinite linear;
+  font-weight: bold;
+}
+
+@keyframes animation4{
+  50%{
+
+    color: #ebc700;
+  }
+}
+
+
+
+
+.s21{
+  height: 250px;
+  width: 80%;
+  /* border: 1px solid white; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s22{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+}
+
+.s22 .count{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ebc700;
+  font-weight: bold;
+  font-size: 120px;
+  font-family: 'Source Serif';
+  float: left;
+  margin: 30px;
+  text-shadow: 1px 1px black;
+  position: relative;
+  top: 20%;
+  left: 40%;
+  animation: animation5 3s infinite linear;
+
+}
+
+
+@keyframes animation5{
+  50%{
+
+    color: #485b24;
+  }
+}
+
+.s22 h1{
+  font-family: 'Open Sans';
+  color: white;
+  /* transform: rotateY(360deg); */
+  position: relative;
+  top: 25%;
+  left: -12%;
+  animation: animation4 3s infinite linear;
+  text-align: right;
+}
+
+.s22 p{
+  font-family: 'Open Sans';
+  color: white;
+  width: 530px;
+  line-height: 25px;
+  /* transform: rotateY(360deg); */
+  position: relative;
+  top: 30%;
+  animation: animation4 3s infinite linear;
+  text-align: right;
+  font-weight: bold;
+}
+
+@keyframes animation4{
+  50%{
+
+    color: #ebc700;
+    /* font-family: 'Source Serif'; */
+  }
+}
+
+
+
+footer{
+  height: 400px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f1{
+  height: 250px;
+  width: 25%;
+  /* border: 1px solid black; */
+  margin-top: 50px;
+}
+
+.f1 .p1{
+  font-family: 'Open Sans';
+  opacity: 0.7;
+  margin-top: 10%;
+  transition-duration: 1s;
+}
+
+.f1 .p1:hover{
+  opacity: 1;
+}
+.f1 li{
+  list-style: none;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.7;
+  transition-duration: 1s;
+}
+
+
+.f1 li:hover{
+  opacity: 1;
+}
+
+footer .p2{
+  font-family: 'Open Sans';
+  margin-left: 30%;
+  width: 700px;
+}
+
+.s23{
+  height: 150px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin-top: 10%;
+  margin-left: 15%;
+  object-fit: cover;
+}
+
+.main8{
+  height: 1100px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.main8 a{
+  font-family: 'Source Serif';
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+.s24{
+  height: 400px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s25{
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.s27{
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/9-1024x630.jpg);
+  transition-duration: 1s;
+  background-size: cover;
+}
+
+.s27:hover{
+  transform: scale(1.1);
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/9-1024x630.jpg);
+}
+.s26{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.s26 h1{
+  font-family: 'Open Sans';
+  font-size: px;
+  color: #485b24;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.s26 p{
+  margin-left: 5%;
+  width: 570px;
+  margin-top: 5%;
+  font-family: 'Open Sans';
+  line-height: 25px;
+}
+
+.s26 button{
+  height: 50px;
+  width: 200px;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 0px;
+  background-color: #485b24;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+.s26 button:hover{
+  background-color: #ebc700;
+}
+
+
+.s28{
+  height: 400px;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  display: flex;
+}
+
+.s28 h1{
+  font-family: 'Open Sans';
+  font-size: px;
+  color: #485b24;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.s28 p{
+  margin-left: 5%;
+  width: 570px;
+  margin-top: 5%;
+  font-family: 'Open Sans';
+  line-height: 25px;
+}
+
+.s28 button{
+  height: 50px;
+  width: 200px;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 0px;
+  background-color: #485b24;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+.s28 button:hover{
+  background-color: #ebc700;
+}
+
+
+
+.s29{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+.s30{
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  background-image: url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/3-1024x630.jpg);
+  transition-duration: 1s;
+  background-size: cover;
+}
+
+.s30:hover{
+  transform: scale(1.1);
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://xstore.b-cdn.net/demos/2/agricultural/wp-content/uploads/sites/26/2019/09/3-1024x630.jpg);
+}
